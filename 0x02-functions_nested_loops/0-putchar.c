@@ -1,10 +1,14 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Return : zero
-*/
+  * main - "entry"
+  * Description - 'Hey'
+  * Return: 0 (success)
+  *
+  *
+  */
 
 int main(void)
 {
@@ -17,5 +21,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
