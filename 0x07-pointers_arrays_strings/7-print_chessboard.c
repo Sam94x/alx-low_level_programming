@@ -1,28 +1,20 @@
 #include "main.h"
+
 /**
-*_strpbrk - The _strpbrk() function locates the first
-* occurrence in the string s of any of the bytes in
-*the string accept
-*
-*@s: string where search is made
-*@accept: string where searched bytes are located
-*
-*Return:Returns a pointer to the byte in s that matches
-* one of the bytes in accept, or NULL if no such byte is found
+ * print_chessboard - prints chessboard.
+ * @a: matrix
 */
 
-char *_strpbrk(char *s, char *accept)
+void print_chessboard(char (*a)[8])
 {
-	int i;
+	int i, j;
 
-	while (*s)
+	for (i = 0; i < 8; i++)
 	{
-		for (i = 0; accept[i]; i++)
+		for (j = 0; j < 8; j++)
 		{
-			if (accept[i] == *s)
-				return (s);
+			_putchar(a[i][j]);
 		}
-		s++;
+		putchar('\n');
 	}
-	return ('\0');
 }
