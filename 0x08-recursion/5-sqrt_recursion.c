@@ -22,11 +22,11 @@ int _sqrt_recursion(int n)
  * Return: the square root of n
  */
 
-int _sqrt(int n, int x)
+int _sqrt(int n, int i)
 {
-	if (x * x > n)
+	if (i * i > n)
 		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	else if (i * i == n)
+		return (i);
+	return (_sqrt(n, i + 1));
 }
